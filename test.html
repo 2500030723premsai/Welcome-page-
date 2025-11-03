@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    interst{
+        background-color: aqua;
+        color: blue;
+        padding: 0px;
+    }
+</style>
+</head> 
+
+<body>
+    <div class="Internal">
+     <h1> Css: Exteral vs Internal vs Inline</h1>
+     <p>Open Devtools and inspect each boxt to see where  the styles come from</p>
+     <h2> External CSS</h2>
+     <div class="Internal" style="background-color: rgb(174, 215, 237); color: rgb(0, 0, 0); padding: 0px;">
+     <p> Styled by <strong>external</strong> CSS from styles.css.</p>
+    
+     </div>
+     <h2> Internal CSS</h2>
+     <div style="background: #f7ff9b; padding: 0px;">
+     <p>Styled by external CSS in the &lt;style&gt; tag of this page. </p>
+     </div>
+     <h2>Inline CSS</h2>
+     <div style="background-color: rgb(255, 215, 151); padding: 0px;" >
+     <p>styled by Inline CSS via the style=""attribute on the element.</p>
+     </div>
+     <h2> Spacificity Showdown(who wins) ? </h2>
+     
+     <p>the same element is targeted by external,internal and inline:</p>
+     <ul>
+        <li>External sets it to <b>blue</b><br><br></li>
+        <li>Internal tries to make  it  <b>green</b><br><br></li>
+       <li> Inline to forces it to <b>red</b><br><br></li>
+     </ul>
+     </div>
+</body>
+</html>
